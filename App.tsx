@@ -4,7 +4,9 @@ import * as Yup from 'yup'
 import { Formik } from 'formik'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import BouncyCheckbox from "react-native-bouncy-checkbox";
-import BgChanger from './BgChanger'
+import BgChanger from './Components/BgChanger'
+import User from './Components/User'
+import APICall from './Components/APICall'
 
 const PasswordSchema = Yup.object().shape({
   passwordLength: Yup.number()
@@ -175,7 +177,12 @@ export default function App() {
     //     ) : null}
     //   </SafeAreaView>
     // </ScrollView>
-    <BgChanger />
+    
+    // <BgChanger />
+
+    // <User />
+
+    <APICall />
   )
 }
 
