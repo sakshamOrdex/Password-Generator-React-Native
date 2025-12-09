@@ -7,6 +7,7 @@ import BouncyCheckbox from "react-native-bouncy-checkbox";
 import BgChanger from './Components/BgChanger'
 import User from './Components/User'
 import APICall from './Components/APICall'
+import Responsive from './Components/Responsive'
 
 const PasswordSchema = Yup.object().shape({
   passwordLength: Yup.number()
@@ -177,12 +178,14 @@ export default function App() {
     //     ) : null}
     //   </SafeAreaView>
     // </ScrollView>
-    
+
     // <BgChanger />
 
     // <User />
 
-    <APICall />
+    // <APICall />
+
+    <Responsive />
   )
 }
 
