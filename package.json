@@ -16,6 +16,7 @@
     "react": "19.1.1",
     "react-native": "0.82.1",
     "react-native-bouncy-checkbox": "^4.1.2",
+    "react-native-responsive-dimensions": "^3.1.1",
     "react-native-safe-area-context": "^5.5.2",
     "yup": "^1.7.1"
   },
