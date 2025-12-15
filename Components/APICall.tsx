@@ -18,10 +18,10 @@ export default function APICall() {
   //   setData(json);
   // };
 
-  // const getData=async ()=>{
-  //   const res=await axios.get('https://jsonplaceholder.typicode.com/posts');
-  //   setData(res.data)
-  // }
+  const getData=async ()=>{
+    const res=await axios.get('https://jsonplaceholder.typicode.com/posts');
+    setData(res.data)
+  }
 
   useEffect(() => {
     getData();
