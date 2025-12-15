@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, FlatList, StyleSheet } from "react-native";
+import axios from "axios";
 
 interface Post {
   userId: number;
@@ -11,11 +12,16 @@ interface Post {
 export default function APICall() {
   const [data, setData] = useState<Post[]>([]);
 
-  const getData = async () => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/posts");
-    const json = await res.json();
-    setData(json);
-  };
+  // const getData = async () => {
+  //   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  //   const json = await res.json();
+  //   setData(json);
+  // };
+
+  // const getData=async ()=>{
+  //   const res=await axios.get('https://jsonplaceholder.typicode.com/posts');
+  //   setData(res.data)
+  // }
 
   useEffect(() => {
     getData();
